@@ -320,7 +320,7 @@ img.floatLeft {
     list-style-type: none;
 }
 #technical_skill{
-	height: 240px;
+	height: 275px;
 	width: 400px;
 	margin: 15px 0 0;
 }
@@ -388,7 +388,7 @@ img.floatLeft {
 	width: 100%;
 	padding: 33px 0 10px;
 }
-#gallery img{ padding:4px;}
+#gallery img{ padding:4px; width:107px; height:107px; opacity: 0.8;}
 #gallery ul { list-style: none; }
 #gallery ul li { display: inline; }
 #gallery ul img {
@@ -489,7 +489,7 @@ label {
 	padding:7px;
 	border:1px solid #CCC;
 	position:fixed;
-	background:url("../img/images/arrow_up.png") no-repeat scroll 50% 50% #CCCCCC;
+	background:url("arrow_up.png") no-repeat scroll 50% 50% #CCCCCC;
 	width:20px;
 	height:20px;
 	bottom:10px;
@@ -509,7 +509,7 @@ label {
 	background-color:white;
 	border:1px solid #CCC;
 	position:fixed;
-	background:url("../img/images/arrow_down.png") no-repeat scroll 50% 50% #CCCCCC;
+	background:url("arrow_down.png") no-repeat scroll 50% 50% #CCCCCC;
 	width:20px;
 	height:20px;
 	bottom:10px;

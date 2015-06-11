@@ -3,10 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>RESUME</title>
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/text.css">
-<link rel="stylesheet" href="css/960_24_col.css">
-<link rel="stylesheet" href="css/sytles.css">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="text.css">
+<link rel="stylesheet" href="960_24_col.css">
+<link rel="stylesheet" href="sytles.css">
 <link rel="stylesheet" type="text/css" href="jquery.lightbox-0.5.css" media="screen">
 <script src="scroll-startstop.events.jquery.js" type="text/javascript"></script>
 
@@ -15,88 +15,32 @@
 <script language="javascript" src="jquery-1.7.1.min.js" type="text/javascript"></script>
 <script language="javascript" src="jquery.tips.js" type="text/javascript"></script>
 <script type="text/javascript" src="jquery.lightbox-0.5.js"></script>
-  
-
 <script type="text/javascript">
-$("document").ready(function (){ 
-
-
-var percent = $('.progress_bar').attr('title');
-$('.progress_bar').animate({width: percent},1000);
-
-var percent = $('.photoshop').attr('title');
-$('.photoshop').animate({width: percent},1000);
-
-var percent = $('.dreamweaver').attr('title');
-$('.dreamweaver').animate({width: percent},1000);
-
-var percent = $('.flash').attr('title');
-$('.flash').animate({width: percent},1000);
-
-var percent = $('.html').attr('title');
-$('.html').animate({width: percent},1000);
-
-var percent = $('.css').attr('title');
-$('.css').animate({width: percent},1000);
-
-var percent = $('.java').attr('title');
-$('.java').animate({width: percent},1000);
-
-var percent = $('.php').attr('title');
-$('.php').animate({width: percent},1000);
-
-// activate tooltip
-	 $('.tip').tipsy({gravity: 's',fade: true});
-
-
-});
-
-
-</script>
-
-    <script type="text/javascript">
-    $(function() {
-        $('#gallery a').lightBox();
-    });
-    </script>
-	
-<script type="text/javascript">
-$(document).ready(function(){
-$("#gallery img").fadeTo("fast", 0.8);
-$("#gallery img").hover(function(){
-$(this).fadeTo("fast", 1.0);
-},function(){
-$(this).fadeTo("fast", 0.8);
-});
-});
-</script>
+	$(function() {
+		var $elem = $('.container_24');
 			
-		<script type="text/javascript">
-			$(function() {
-				var $elem = $('.container_24');
+		$('#nav_up').fadeIn('slow');
+		$('#nav_down').fadeIn('slow');  
 				
-				$('#nav_up').fadeIn('slow');
-				$('#nav_down').fadeIn('slow');  
+		$(window).bind('scrollstart', function(){
+			$('#nav_up,#nav_down').stop().animate({'opacity':'0.2'});
+		});
+		$(window).bind('scrollstop', function(){
+			$('#nav_up,#nav_down').stop().animate({'opacity':'1'});
+		});
 				
-				$(window).bind('scrollstart', function(){
-					$('#nav_up,#nav_down').stop().animate({'opacity':'0.2'});
-				});
-				$(window).bind('scrollstop', function(){
-					$('#nav_up,#nav_down').stop().animate({'opacity':'1'});
-				});
-				
-				$('#nav_down').click(
-					function (e) {
-						$('html, body').animate({scrollTop: $elem.height()}, 800);
-					}
-				);
-				$('#nav_up').click(
-					function (e) {
-						$('html, body').animate({scrollTop: '0px'}, 800);
-					}
-				);
-            });
-        </script>
+		$('#nav_down').click(
+			function (e) {
+				$('html, body').animate({scrollTop: $elem.height()}, 800);
+			}
+		);
+		$('#nav_up').click(
+			function (e) {
+				$('html, body').animate({scrollTop: '0px'}, 800);
+			}
+		);
+	});
+</script>
 
 <style type="text/css"></style>
 </head>
@@ -105,11 +49,11 @@ $(this).fadeTo("fast", 0.8);
 
     <div id="header"><!-- Header -->
 	
-	<ul class="social_panel">
-				<li><a href="http://logosmile.net/aurel/#" title="Facebook Profile" class="blue-darker"><img src="facebook.png" width="24" height="24" alt="Facebook Profile"></a></li>
-				<li><a href="http://logosmile.net/aurel/#" title="Twitter Profile" class="blue"><img src="twitter.png" width="24" height="24" alt="Twitter Profile"></a></li>
-				<li><a href="http://logosmile.net/aurel/#" title="Linked In Profile" class="blue-dark"><img src="linkedin.png" width="24" height="24" alt="Linked In Profile"></a></li>
-            </ul> 
+	<!--<ul class="social_panel">
+				<li><a href="http://logosmile.net/aurel/#" title="Facebook Profile" class="blue-darker"><img src="images/facebook.png" width="24" height="24" alt="Facebook Profile"></a></li>
+				<li><a href="http://logosmile.net/aurel/#" title="Twitter Profile" class="blue"><img src="images/twitter.png" width="24" height="24" alt="Twitter Profile"></a></li>
+				
+            </ul>  -->
     </div><!-- End Header -->
 <div class="container_24">
 
@@ -145,11 +89,11 @@ $(this).fadeTo("fast", 0.8);
          <h1>AVAILABLE FOR :</h1>
          <h3>HIRE AND FREELANCE WORK</h3>
          <h2>Website</h2>
-         <ul><li><a href="http://logosmile.net/aurel/#">johndoe.org</a></li></ul>
+         <ul><li><a href="https://github.com/hhugu" target="_blank" >Github profile</a></li></ul>
          <h2>Mobile Number</h2>
-         <ul><li>+0274 8175427869</li></ul>
+         <ul><li>+0034 620820748</li></ul>
          <h2>Email Address</h2>
-         <ul><li>hello@johndoe.org</li></ul>
+         <ul><li>hugusport@gmail.com</li></ul>
          
         </div>
     </div>
@@ -163,22 +107,24 @@ $(this).fadeTo("fast", 0.8);
 <!--PERSONAL STATMENT -->
 <div class="grid_10">
     <div class="ribbon2">Personal Statment</div>
-         <img class="floatLeft" src="pass_photo.png" alt="Smiley face" height="160" width="150"> 
+         <img class="floatLeft" src="images/pass_photo.png" alt="Smiley face" height="160" width="150"> 
 		 <div class="item">
-         <p>I'am UK based graphic designer, ilustrator and webdesigner creating effective visual identities for companies of all size around the world. As graphic designer, I'am a problem solver at heart and strive to deliver the most effective solution at the higest of standars. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis in sem. Nam leo tortor Nam leo tortor Vivamus sit amet ligula non lectus cursus egestas</p>
-		</div><!--AVATAR -->
+        
+<p>I'm an spanish developer who can be easily adapted to any code lenguage, very motivated and eager to learn. In the work I'm a serious person, very implicated in the code and who can accept advices from others coworkers and following, always, the standars of development.</p> <p>In general I'm a very sociable person, who likes meet with his friends, who loves to practice deport but specially who works hard to learn more to be more helpful.</p>
+		</div>
+<!--AVATAR -->
        
 
     <div class="ribbon2">Education</div>
     <div class="item_tittle"> 
     <h1>IES FRANCESC BORJA MOLL<span>2013-2015</span></h1>
-    <h2>Multiplatform  Aplication Development</h2>
+    <h2>Multiplatform Aplication Development</h2>
 </div>
-    <div class="item"><p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copywriting, Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p></div>
+    <div class="item"><p>Studying the bases of the development in Java (for desktop aplications) and Android development (in Java too), an introduction to web designer (HTML5 and CSS3), the data access in SQL and MySQL, the bases of sorce control, the UML diagrams and agile development techniques.</p></div>
     <div class="item_tittle"> 
     <h1>IES LLUCMAJOR<span>2011-2013</span></h1>
     <h2>Technological Baccalaureate</h2>
-	<div class="item"><p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copywriting, Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p></div>
+	<div class="item"><p>Studying basic subjects like english, maths, tecnology, electronic, technical drawing...</p></div>
 </div>
            
 </div>
@@ -189,43 +135,52 @@ $(this).fadeTo("fast", 0.8);
     <div class="ribbon2">My Skill Set</div>
 	 <div id="technical_skill">
           <div id="skill_list2"><ul>
-         <li>Photoshop</li>
-         <li>Ilustrator</li>
-         <li>Dreamweaver</li>
-         <li>FLASH</li>
-         <li>HTML</li>
-         <li>CSS</li>
+         <li>Java</li>
+	 <li>Android</li>
+         <li>ASP .NET</li>
+         <li>C#</li>
+         <li>HTML5</li>
+         <li>CSS3</li>
          <li>JAVA SCRIPT</li>
+	 <li>SQL / MySQL</li>
+	 <li>SQL Server</li>
          <li>PHP</li>
          </ul></div>
 		<div id="skill_set"><!--PROGRESS BAR-->
              <ul>
              <li>
              <div class="progress_container">
-             <div class="photoshop tip" original-title="90%" style="width: 90%;"></div>
+             <div class="progress_bar tip" original-title="90%" style="width: 90%;"></div>
+             </div></li>
+	     <li>
+             <div class="progress_container">
+             <div class="progress_bar tip" original-title="90%" style="width: 90%;"></div>
              </div></li>
              <li>
              <div class="progress_container">
-             <div class="progress_bar tip" original-title="50%" style="width: 50%;"></div>
+             <div class="progress_bar tip" original-title="60%" style="width: 60%;"></div>
              </div></li>
              <li>
              <div class="progress_container">
-             <div class="dreamweaver tip" original-title="70%" style="width: 70%;"></div>
+             <div class="progress_bar tip" original-title="70%" style="width: 70%;"></div>
              </div></li>
              <li><div class="progress_container">
-             <div class="flash tip" original-title="75%" style="width: 75%;"></div>
+             <div class="progress_bar tip" original-title="80%" style="width: 80%;"></div>
              </div></li>
              <li><div class="progress_container">
-             <div class="html tip" original-title="85%" style="width: 85%;"></div>
+             <div class="progress_bar tip" original-title="65%" style="width: 65%;"></div>
              </div></li>
              <li><div class="progress_container">
-             <div class="css tip" original-title="90%" style="width: 90%;"></div>
+             <div class="progress_bar tip" original-title="20%" style="width: 20%;"></div>
              </div></li>
              <li><div class="progress_container">
-             <div class="java tip" original-title="60%" style="width: 60%;"></div>
+             <div class="progress_bar tip" original-title="80%" style="width: 80%;"></div>
+             </div></li>
+	     <li><div class="progress_container">
+             <div class="progress_bar tip" original-title="80%" style="width: 80%;"></div>
              </div></li>
              <li><div class="progress_container">
-             <div class="php tip" original-title="20%" style="width: 20%;"></div>
+             <div class="progress_bar tip" original-title="20%" style="width: 20%;"></div>
              </div></li>
              </ul>
             </div>
@@ -234,15 +189,15 @@ $(this).fadeTo("fast", 0.8);
     <div class="ribbon2">Experience</div>
 
     <div class="item_tittle"> 
-    <h1>GAMATECNO UK<span>Aug 2008 - Jan 2011</span></h1>
-    <h2>Graphic Designer And Ilustrator</h2></div>
-    <div class="item"><p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copywriting, Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p></div>
+    <h1>iSystems<span>Mar 2015 - Jun 2015</span></h1>
+    <h2>Web developer</h2></div>
+    <div class="item"><p>This was my degree practices. I worked with ASP .NET, C#, HTML5, CSS3, Javascript and SQL Server developing a web application called Invoice360. In total was 400 hours of formation.</p></div>
 
    
     <div class="item_tittle"> 
-      <h1>Swaragama USA <span>May 2007 - Aug 2008 </span></h1>
-      <h2>Graphic Designer And Documentation </h2></div>
-     <div class="item"> <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copywriting, Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p></div>
+      <h1>Final proyect of the degree <span>JAN 2015 - Jun 2015</span></h1>
+      <h2>Android developer</h2></div>
+     <div class="item"> <p>Creating the proyect for Android we used Java, PHP and MySQL. It was a very helpful work for me, basicaly because with it I was to learn a lot of concepts in a short time and only with me, anyone was with me for tell me what want to do all time, only me, my <a href="https://github.com/atejedo94" target="_BLANK">classmate</a>, and the Internet.</p></div>
 
 
 </div>
@@ -260,65 +215,18 @@ $(this).fadeTo("fast", 0.8);
 	<div id="gallery">
     <ul>
         <li>
-            <a href="http://logosmile.net/aurel/photos/image1.jpg" title="Text Goes Here..!!">
-                <img src="thumb_image1.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
+            <a href="http://www.invoice360.pro" target="_blank" >
+                <img src="images/invoice.gif" alt="">
             </a>
         </li>
         <li>
-            <a href="http://logosmile.net/aurel/photos/image2.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image2.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
+            <a href="https://github.com/hhugu/ControlAeroport"  target="_blank"">
+                <img src="images/controlAeroport.png" alt="">
             </a>
         </li>
-        <li>
-            <a href="http://logosmile.net/aurel/photos/image3.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image3.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-        <li>
-            <a href="http://logosmile.net/aurel/photos/image4.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image4.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-        <li>
-            <a href="http://logosmile.net/aurel/photos/image5.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image5.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-		   <li>
-            <a href="http://logosmile.net/aurel/photos/image6.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image6.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li></ul>
-		<div id="gallery2">
-        <ul>
-		   <li>
-            <a href="http://logosmile.net/aurel/photos/image7.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image7.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-		   <li>
-            <a href="http://logosmile.net/aurel/photos/image8.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image8.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-		<li>
-            <a href="http://logosmile.net/aurel/photos/image9.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image9.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-		<li>
-            <a href="http://logosmile.net/aurel/photos/image10.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image10.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-		<li>
-            <a href="http://logosmile.net/aurel/photos/image11.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image11.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
-            </a>
-        </li>
-		<li>
-            <a href="http://logosmile.net/aurel/photos/image12.jpg" title="Text Goes Here..!!. $(&#39;#gallery a&#39;).lightBox();">
-                <img src="thumb_image12.jpg" width="107" height="107" alt="" style="opacity: 0.8;">
+	<li>
+            <a href="https://github.com/IESBorjaMollDAM-AD-2014-15/Basket"  target="_blank"">
+                <img src="images/basketManager.png" alt="">
             </a>
         </li>
     </ul>
@@ -337,13 +245,13 @@ $(this).fadeTo("fast", 0.8);
 		<div class="ribbon2">Why We Should Work Together</div><div class="why_me">
 		         
 		            <ul>
-                    <li>Very Good understanding of the principles of design and design theories</li>
-                    <li>Good technical skills enables me to use my knowlage of design principles</li>
-                    <li>Ability to conceptualise and think visually</li>
-                    <li>Ability to work within a team or alone</li>
-					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-					<li>Pellentesque scelerisque urna in dui viverra faucibus</li>
-					<li>Nullam vel erat lacus, at tincidunt nibh</li>
+                    		<li>Very Good understanding of the principles of development and development theories</li>
+                    		<li>Good technical skills enables me to use my knowlage of design principles</li>
+                    		<li>Ability to conceptualise and think visually</li>
+                    		<li>Ability to work within a team or alone</li>
+				<li>Autodidact person, easiness to learn</li>
+				<li>Persevering person, who dedicate all of time to resolve the problems</li>
+				<li>Seriously and efficient.</li>
 		            </ul>
                     </div>
 		</div>
