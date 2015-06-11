@@ -270,7 +270,7 @@
 				<label for="Message">Message:</label><br>
 				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
 
-				<input type="submit" name="submit" value="Submit" class="submit-button">
+				<input type="submit" name="submit" value="Submit" class="submit-button" enabled="false">
 			</form>
 			<div style="clear: both;"></div>
 			</div>
