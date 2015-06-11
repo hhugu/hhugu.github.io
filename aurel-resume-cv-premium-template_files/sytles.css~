@@ -321,6 +321,7 @@ img.floatLeft {
 }
 #technical_skill{
 	height: 240px;
+	width: 400px;
 	margin: 15px 0 0;
 }
 .progress_container{
