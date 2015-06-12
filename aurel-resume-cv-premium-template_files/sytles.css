@@ -16,6 +16,7 @@ a {
 
 a:hover {
 	text-decoration: none;
+	font-weight:700;
 }
 a:link {color:#737475;}      
 a:visited {color:#737475}  
@@ -389,6 +390,7 @@ img.floatLeft {
 	padding: 33px 0 10px;
 }
 #gallery img{ padding:4px; width:107px; height:107px; opacity: 0.8;}
+#gallery a:hover img{ padding:4px; width:137px; height:137px; margin-bottom:-30px;}
 #gallery ul { list-style: none; }
 #gallery ul li { display: inline; }
 #gallery ul img {
