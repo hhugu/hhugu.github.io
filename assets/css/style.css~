@@ -27,7 +27,7 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #999 !important;
+	color: #999;
 }
 
 /* ---------------------------------------------- /*
