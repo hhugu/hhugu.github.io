@@ -72,7 +72,6 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#footer">Hugu</a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
@@ -81,6 +80,7 @@
 						<li><a href="#services">Services</a></li>
                         			<li><a href="#portfolio">Works</a></li>
 			                        <li><a href="#skills">Skills</a></li>
+						<li><a href="#experience">Experience</a></li>
 						<li><a href="#testimonials" style="display:none">Testimonials</a></li>
 						<li><a href="#footer">Contact</a></li>
 					</ul>
@@ -368,7 +368,7 @@
 		      <h2 class="pfblock-title">Education & Experience</h2>
         	      <div class="pfblock-line"></div>
 		      <div class="pfblock-subtitle">
-        	          In the left side (in green) are my schooling and in the right side (in blue), my profesional experience.
+        	          In the left side, in green, are my schooling and in the right side,in blue, my profesional experience.
         	      </div>
 		  </div>
 	       </div>
@@ -425,13 +425,13 @@
     <!--due -->
     
     		<div class="row timeline-movement">
-        		<div class="timeline-badge">
+        		<div class="timeline-badge  wow fadeInDown">
 		            <span class="timeline-balloon-date-day">Sep</span>
 		            <span class="timeline-balloon-date-month">2013</span>
 		        </div>
     
 		        <div class="col-sm-6  timeline-item">
-		            <div class="row">
+		            <div class="row  wow slideInLeft">
 		                <div class="col-sm-11">
 		                    <div class="timeline-panel credits">
 		                        <ul class="timeline-panel-ul">
@@ -449,13 +449,13 @@
     <!--due -->
 
 	        <div class="row timeline-movement">
-		    <div class="timeline-badge">
+		    <div class="timeline-badge  wow fadeInDown">
 		        <span class="timeline-balloon-date-day">Sep</span>
 	                <span class="timeline-balloon-date-month">2011</span>
 	            </div>
     
 		    <div class="col-sm-6  timeline-item">
-		        <div class="row">
+		        <div class="row  wow slideInLeft">
                 	    <div class="col-sm-11">
 		                <div class="timeline-panel credits">
                 		    <ul class="timeline-panel-ul">
